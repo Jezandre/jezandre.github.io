@@ -263,5 +263,18 @@
     .skills-box i {
       font-size: 60px;
     }
+      
+    .powerbi {
+      flex: 1 1 100%;
+      max-width: 100%;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+  
+    .powerbi i {
+      font-size: 60px;
+    }
   
   }
+  
+  
