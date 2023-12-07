@@ -26,6 +26,7 @@
     display: flex;
     flex-direction: row;
     color: var(--main-text-color);
+    flex-wrap: wrap;
   }
   
   #bio-container {
@@ -167,14 +168,10 @@
   }
   
   .skills-box {
-    flex: 1 1 auto; /* Alterado para ocupar todo o espaço disponível */
-    max-width: none; /* Removido o limite máximo de largura */
-    margin-right: 10px; /* Adicionado espaçamento entre as caixas (opcional) */
+    flex: 1 1 33%;
+    max-width: 33%;
     margin-bottom: 35px;
-    box-sizing: border-box; /* Garante que as bordas e o padding não aumentem a largura total */
-}
-
-  
+  }
   
   .skills-title {
     font-size: 24px;
@@ -182,9 +179,11 @@
     font-weight: bold;
     padding-left: 10px;
     border-left: 5px solid var(--main-color);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  }
+  
+  .skills-box i {
+    font-size: 45px;
+    margin-right: 10px;
   }
 
   .skills-box i {
@@ -192,20 +191,16 @@
     margin-right: 10px;
   }
 
-#powerbi-container {
+  #powerbi-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 25px;
 }
 
 .powerbi {
-    flex: 1 1 48%;
-    max-width: 48%;
-    margin-bottom: 35px;
-    box-sizing: border-box;
+    flex: 1 1 calc(33.33% - 20px); /* Define a largura desejada para telas maiores */
+    margin: 10px;
 }
 
-/* Estilo para os títulos, ajuste conforme necessário */
 .powerbi-title {
     font-size: 24px;
     margin-bottom: 25px;
@@ -213,8 +208,6 @@
     padding-left: 5px;
     border-left: 10px solid var(--main-color);
 }
-
-
   
   /* Mobile */
   @media(max-width: 450px) {
@@ -265,11 +258,9 @@
     }
       
     .powerbi {
-      flex: 1 1 100%;
-      max-width: 100%;
-      margin-bottom: 40px;
-      text-align: left;
-    }
+      flex: 1 1 calc(100% - 20px); /* Ocupa toda a largura disponível */
+  }
+}
   
     .powerbi i {
       font-size: 60px;
