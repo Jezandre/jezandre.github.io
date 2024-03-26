@@ -13,7 +13,7 @@
     --border-color: #999;
     --bio-bg-color: #1E2A3A;
     --bio-border-color: #293544;
-    --about-bg-color: #111821;
+    --about-bg-color: #000000;
   }
   
   /* General */
@@ -271,6 +271,43 @@ iframe {
       font-size: 60px;
     }
   
-  }
   
   
+/* Estilos CSS para o layout das colunas */
+.tools-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.powerbi-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.powerbi-col {
+  width: calc(33.33% - 20px); /* Ajuste conforme necessário para espaçamento */
+  margin-bottom: 20px; /* Espaçamento entre as linhas */
+}
+
+.powerbi-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* Proporção de aspecto para manter a altura correta do iframe */
+}
+
+.powerbi-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.powerbi-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
