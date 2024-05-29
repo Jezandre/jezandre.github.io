@@ -1,128 +1,1259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Jezandre Tiago</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
-    <!--DevIcons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <!--CSS do Projeto-->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <main id="container">
-        <aside id="bio-container">
-            <h2>Jezandre Tiago</h2>
-            <img id="bio-image" src="img/profile.jpeg" alt="Jezandre Tiago">
-            <p>Olá, meu nome é Jezandre Tiago e sou <span class="highlight">analista de dados</span>.</p>
-            <p id="welcome-text">Seja bem vindo</p>
-            <ul id="social-container">
-                <li><a href="https://www.linkedin.com/in/jezandre/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            </ul>
-            <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon><a href="jezandre_tiago@hotmail.com">jezandre_tiago@hotmail.com</a>
-            </div>            
-        </aside>
-        <section id="about-container">
-            <h1 id="name">Jezandre Tiago</h1>
-            <p id="title"><span class="highlight">Analista de dados</span></p>
-            <p class="description">Sou analista de dados e tenho sólidos conhecimentos em <span class="highlit">SQL, Python, Estatística e DataViz</span></p>
-            <p class="description">Atuo desde a etapa de extração e tratamento até visualização das informações em dashboards, estudo todos os dias para obter conhecimento e entregar cada vez mais trabalhos de qualidade.</span></p>
-            <p class="description">Atualmente estou me especializando em engenharia de dados.</span></p>
-            <a href="https://github.com/Jezandre" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon><span>Ver Projetos</span></a>
-            <h2 id="skill-section-title">Minhas Skills</h2>
-            <p class="dexcription">Conheça as tecnologias que domino:</p>
-            <div id="skill-container">
-                <div class="tools-row">
-                    <div class="skills-box">
-                        <p class="skills-title">ETL e Processamento de dados</p>
-                        <i class="devicon-python-plain colored"></i>
-                        <i class="devicon-microsoftsqlserver-plain colored"></i>
-                        <i href="https://airflow.apache.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg"  alt="apacheairflow" width="40" height="40"/> </i>
-                        <i href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="apacheairflow" width="40" height="40"/> </i>
-                        <i href="https://spark.apache.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original-wordmark.svg" alt="apacheairspark" width="40" height="40"/> </i>             
-                    </div>
-                    <div class="skills-box">
-                        <p class="skills-title">Databases</p>
-                        <i class="devicon-mysql-plain colored"></i>
-                        <i class="devicon-microsoftsqlserver-plain colored"></i>
-                        <i class="devicon-postgrsql-plain colored"></i>                                        
-                        <i href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </i> 
-                        <i href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </i> 
-                        <i href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </i> 
-                    </div>
-                    <div class="skills-box">
-                        <p class="skills-title">Tools</p>
-                        <i href="https://www.powerbi.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg" alt="powerbi" width="40" height="40" style="filter: invert(1);"/></i>
-                        <i href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/></i>
-                        <i class="devicon-python-plain colored"></i>
-                        <i target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </i> 
-                        <i target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg" width="40" height="40"/> </i>
-                        <i target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" width="40" height="40"/> </i>
-                        <i target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ssh/ssh-original-wordmark.svg" width="40" height="40"/> </i>
-                        <i target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" width="40" height="40"/> </i>
-                        <i target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"  width="40" height="40"/> </i>
-                        <i target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"width="40" height="40"/> </i>
-                        <i class="devicon-pandas-plain"></i>
-                        <i class="devicon-linux-plain"></i>
-                        <i class="devicon-git-plain colored"></i>
-                        <i class="devicon-github-plain"></i>
-                    </div>    
-            </div>
-                
-                
-            </div>
-            <div id="powerbi-container">
-                <div class="powerbi-row">
-                    <div class="powerbi-col">
-                        <p class="powerbi-title">Relatório: Copa do Mundo</p>
-                        <div class="powerbi-wrapper">                            
-                            <iframe title="Projeto Copa" src="https://app.powerbi.com/view?r=eyJrIjoiM2NlOWRhN2ItOThkMS00Mzk3LWJiZWMtYzcxNGMwZmZhMTg3IiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9" frameborder="0" allowFullScreen="true" ></iframe>
-                        </div>                        
-                    </div>
-                    <div class="powerbi-col">
-                        <p class="powerbi-title">Relatório: Vendas</p>
-                        <div class="powerbi-wrapper">                            
-                            <iframe title="Relatório: Vendas" src="https://app.powerbi.com/view?r=eyJrIjoiMDNkMDRmN2MtZTM5Yi00YzgwLWE3NmEtMjJhZDI0Y2ZhMTliIiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9" frameborder="0" allowFullScreen="true" ></iframe>
-                        </div>                         
-                    </div>
-                    <div class="powerbi-col">
-                        <p class="powerbi-title">Relatório: Proposições Indaial</p>
-                        <div class="powerbi-wrapper">                            
-                            <iframe title="ProposicoesIndaial" src="https://app.powerbi.com/view?r=eyJrIjoiNGJjMTM2ZjAtZjlhMC00NDU4LThmMWUtYWQzOGJiZjMxOWI3IiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9" frameborder="0" allowFullScreen="true" ></iframe>
-                        </div>
-                    </div>                    
-                        <div class="powerbi-col">
-                            <p class="powerbi-title">Relatório: RH</p>
-                            <div class="powerbi-wrapper">                                
-                                <iframe title="Relatório: Vendas" src="https://app.powerbi.com/view?r=eyJrIjoiMzQ1OGU1MDctZTI5Zi00N2NjLWEyMGItMmM5MzZmYWIzNTdjIiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9" frameborder="0" allowFullScreen="true" ></iframe>
-                            </div>
-                        </div>
-                        <div class="powerbi-col">
-                            <p class="powerbi-title">Relatório: Vendas</p>
-                            <div class="powerbi-wrapper">                                
-                                <iframe title="Relatório: Vendas" src="https://app.powerbi.com/view?r=eyJrIjoiMjgxNmM2OWUtMTA1Yy00ZDFiLTlmMmEtZTY3ZjZlOWM3YjZiIiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9" frameborder="0" allowFullScreen="true" ></iframe>
-                            </div>
-                        </div>
-                        <div class="powerbi-col">
-                            <p class="powerbi-title">Relatório: Vendas</p>
-                            <div class="powerbi-wrapper">                                
-                                <iframe title="Relatório: Vendas" src="https://app.powerbi.com/view?r=eyJrIjoiZTJmY2RjNjktNjdjMC00ZTEzLTg5NzYtMjc2NDQ0NDNhZjE5IiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9" frameborder="0" allowFullScreen="true" ></iframe>
-                            </div>                        
-                                                   
-                    <!-- Repita este padrão para adicionar mais relatórios -->
-                </div>
-            </div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profile.jpeg" alt="Jezandre do Nascimento Tiago" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Jezandre do Nascimento Tiago">Jezandre Tiago</h1>
+
+          <p class="title">Data Analyst | Data Enginer</p>
         </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jezandre_tiago@hotmail.com" class="contact-link">jezandre_tiago@hotmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+55 (31)99121-5673</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Minas Gerais, Contagem, BRA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jezandre/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Sobre</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Curriculo</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Sobre mim</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Profissional com sólida experiência em Análise de Dados, 
+            especializado em SQL, Python, Estatística e Data Visualization. 
+            Experiência comprovada na implantação e sustentação de projetos 
+            complexos e na criação de pipelines de dados. Hábil na extração, 
+            tratamento e transformação de dados, e na criação de visualizações 
+            de dados significativas para suportar decisões estratégicas. 
+            Formação em Engenharia Química (destaque academico de 2017) e 
+            pós-graduação em Ciência de Dados, com conhecimento em cloud computing (AWS).
+          </p>
+
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Projetos - Engenharia de dados</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <a href="https://github.com/Jezandre/criar_tarefa_planner_graph" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="Integração ERP com KANBAN">Integração ERP com KANBAN</h4>
+
+                <p class="service-item-text">
+                  Este projeto teve como objetivo realizar a integração entre o sistema ERP da empresa
+                  com a ferramenta MS Planner da microsoft, utilizando python, API Rest e SQL. Tal processo otimizou cerca de 80% do tempo 
+                  de trabalho.
+                </p>
+              </a>
+              </div>            
+
+            </li>
+
+            <li class="service-item">
+              <a href="https://github.com/Jezandre/CNES_Fluxo_AirFlow" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Criando datalake dados do portal DATASUS</h4>
+
+                <p class="service-item-text">
+                  Este projeto tem como objetivo criar uma pipeline para abastecer um datalake
+                  utilizando airflow. O processo permitiu que dados importantes para empresas da 
+                  área da saúde estejam disponíveis para consumo e consulta.
+                </p>
+              </a>
+              </div>              
+            </li>
+
+            <li class="service-item">
+              <a href="https://github.com/Jezandre/north_wind_db" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Projeto engenharia de dados AWS - NorthWinddb</h4>
+
+                <p class="service-item-text">
+                  Referente a um dos projetos disponíveis no curso do 
+                  Fernando Amaral no curso Formação Engenharia de Dados: Domine Big Data! 
+                  disponível na Udemy. O projeto consiste na criação de um pipeline utilizando
+                  ferramentas da nuvem AWS e responder a cinco perguntas de negócio utilizando SQL.
+                </p>
+              </a>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+              <a href="https://github.com/Jezandre/wind_farm" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Projeto de Engenharia de dados - Criando um Datalake e estimando custos - WindFarm </h4>
+
+                <p class="service-item-text">
+                  O presente artigo é referente ao segundo projeto disponívei no 
+                  curso do Fernando Amaral no curso Formação Engenharia de Dados: 
+                  Domine Big Data! disponível na Udemy. Ele apresenta um projeto de telemetria e 
+                  toda a engenharia utilizada da aws, bem como a estimativa de custos.
+
+                </p>
+              </a>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+              <a href="https://github.com/Jezandre/ProjetoSQLVidrarias" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Porjeto SQL - Criando um datawrehouse de vidrarias</h4>
+
+                <p class="service-item-text">
+                  O intuito deste projeto é criar e simular um sistema de banco de dados em SQLserver utilizando a 
+                  linguagem SQL para armazenar informações relevantes de uma vidraria
+                </p>
+              </a>
+              </div>
+
+            </li>
+
+            
+
+          </ul>
+
         </section>
+
+
+        <!--
+          - dashboards
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Projetos - Análise de dados</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Relatório: Copa do Mundo</h4>
+
+                <p class="service-item-text">
+                  <iframe title="Projeto Copa" 
+                  src="https://app.powerbi.com/view?r=eyJrIjoiM2NlOWRhN2ItOThkMS00Mzk3LWJiZWMtYzcxNGMwZmZhMTg3IiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9" 
+                  frameborder="0" 
+                  allowFullScreen="true" 
+                  width="350" 
+                  height="275">
+                </iframe>
+                </p>     
+              </div>
+            </li>         
+
+            <li class="service-item">
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Relatório: Proposições Indaial</h4>
+              <p class="service-item-text">
+                <iframe title="Relatório: Proposições Indaial" 
+                src="https://app.powerbi.com/view?r=eyJrIjoiNGJjMTM2ZjAtZjlhMC00NDU4LThmMWUtYWQzOGJiZjMxOWI3IiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9"
+                frameborder="0" 
+                allowFullScreen="true" 
+                width="350" 
+                height="275">
+              </iframe>
+              </p>     
+            </div>
+
+            </li>
+
+            
+              <li class="service-item">
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Relatório: RH</h4>
+                <p class="service-item-text">
+                  <iframe title="Relatório: RH" 
+                  src="https://app.powerbi.com/view?r=eyJrIjoiMzQ1OGU1MDctZTI5Zi00N2NjLWEyMGItMmM5MzZmYWIzNTdjIiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9"
+                  frameborder="0" 
+                  allowFullScreen="true" 
+                  width="350" 
+                  height="275">
+                </iframe>
+                </p>     
+              </div>
+  
+              </li>
+                          
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Relatório: Vendas</h4>
+                  <p class="service-item-text">
+                    <iframe title="Relatório: Vendas" 
+                    src="https://app.powerbi.com/view?r=eyJrIjoiMDNkMDRmN2MtZTM5Yi00YzgwLWE3NmEtMjJhZDI0Y2ZhMTliIiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9"
+                    frameborder="0" 
+                    allowFullScreen="true" 
+                    width="350" 
+                    height="275">
+                  </iframe>
+                  </p>     
+                </div>
+    
+                </li>
+                            
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Relatório: Vendas</h4>
+                  <p class="service-item-text">
+                    <iframe title="Relatório: Vendas" 
+                    src="https://app.powerbi.com/view?r=eyJrIjoiMjgxNmM2OWUtMTA1Yy00ZDFiLTlmMmEtZTY3ZjZlOWM3YjZiIiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9"
+                    frameborder="0" 
+                    allowFullScreen="true" 
+                    width="350" 
+                    height="275">
+                  </iframe>
+                  </p>     
+                </div>
+    
+                </li>
+                            
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Relatório: Vendas</h4>
+                  <p class="service-item-text">
+                    <iframe title="Relatório: Vendas" 
+                    src="https://app.powerbi.com/view?r=eyJrIjoiZTJmY2RjNjktNjdjMC00ZTEzLTg5NzYtMjc2NDQ0NDNhZjE5IiwidCI6ImI0NGQxYWIzLTFhYjAtNDVlNS04MzU1LWMzNmQzMzYzNGEyYSJ9"
+                    frameborder="0" 
+                    allowFullScreen="true" 
+                    width="350" 
+                    height="275">
+                  </iframe>
+                  </p>     
+                </div>
+    
+                </li>
+            </ul>
+
+          </section>
+
         
-    </main>
-    <!--Fonte de icones-->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Tools</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <!-- <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li> -->
+                
+<li class="clients-item">
+  <a href="#" target="_blank" rel="noreferrer" style="margin-right: 1cm;">
+    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/>
+  </a>
+</li>
+
+<li class="clients-item">
+  <a href="#" target="_blank" rel="noreferrer" style="margin-right: 1cm;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg" width="40" height="40"/>
+  </a>
+</li>
+
+<li class="clients-item">
+  <a href="#" target="_blank" rel="noreferrer" style="margin-right: 1cm;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" width="40" height="40"/>
+  </a>
+</li>
+
+<li class="clients-item">
+  <a href="#" target="_blank" rel="noreferrer" style="margin-right: 1cm;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ssh/ssh-original-wordmark.svg" width="40" height="40"/>
+  </a>
+</li>
+
+<li class="clients-item">
+  <a href="#" target="_blank" rel="noreferrer" style="margin-right: 1cm;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" width="40" height="40"/>
+  </a>
+</li>
+
+<li class="clients-item">
+  <a href="#" target="_blank" rel="noreferrer" style="margin-right: 1cm;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="40" height="40"/>
+  </a>
+</li>
+
+<li class="clients-item">
+  <a href="#" target="_blank" rel="noreferrer" style="margin-right: 1cm;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" width="40" height="40"/>
+  </a>
+</li>
+
+
+            <!-- <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+
+              <span>2007 — 2008</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+
+              <span>2006 — 2007</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+              <span>2002 — 2004</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Creative director</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
