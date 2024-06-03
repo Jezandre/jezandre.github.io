@@ -1880,3 +1880,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+  body {
+      background-color: #000; /* Fundo preto para contraste */
+      color: #fff; /* Cor do texto branca */
+      font-family: var(--ff-poppins);
+  }
+  h1, h2 {
+      color: #fff; /* Cor do texto dos títulos */;
+  }
+    
