@@ -735,7 +735,7 @@ main {
   gap: 15px;
   margin: 0 -15px;
   padding: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 2px;
   overflow-x: auto;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
@@ -744,8 +744,9 @@ main {
 }
 
 .clients-item {
-  min-width: 50%;
+  min-width: 10%;
   scroll-snap-align: start;
+  margin: 0 1px; /* Added margin for spacing */
 }
 
 .clients-item img {
