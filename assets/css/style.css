@@ -746,7 +746,7 @@ main {
 .clients-item {
   min-width: 10%;
   scroll-snap-align: start;
-  margin: 0 1px; /* Added margin for spacing */
+  margin: 0 px; /* Added margin for spacing */
 }
 
 .clients-item img {
