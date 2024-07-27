@@ -751,7 +751,7 @@ main {
 
 .clients-item img {
   width: 100%;
-  filter: grayscale(1);
+  filter: drop-shadow(2px 2px 5px black);
   transition: var(--transition-1);
 }
 
