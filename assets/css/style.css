@@ -331,9 +331,11 @@ main {
   gap: 15px;
 }
 
-.avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+
+.avatar-box img {
+  border-radius: 300px; /* Aplica o arredondamento à imagem */
+  width: 100%; /* Ajusta a largura da imagem para preencher a caixa */
+  height: auto; /* Mantém a proporção da imagem */
 }
 
 .info-content .name {
